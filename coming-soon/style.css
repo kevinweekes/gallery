@@ -8,14 +8,28 @@ hr {
     width: 40%;
 }
 
+input[type=submit] {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 15px;
+    color: rgb(15, 25, 25);
+
+    -webkit-appearance: none;
+}
+
+.filtered {
+    -webkit-filter: grayscale(100%);
+    filter: 100%;
+}
+
 .bg-img {
-    background-image: url('./news-logo.jpg');
+    background-image: url('https://res.cloudinary.com/kevinweekes/image/upload/v1489534673/gbrbigpll7g-jean-gerber_q58k27.jpg');
+    max-width: 100%; 
     height: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
     color: rgba(255, 255, 255, 1);
-    font-family: Courier New, Courier, monospace;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 25px;
 }
 
