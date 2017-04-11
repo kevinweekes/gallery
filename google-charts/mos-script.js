@@ -13,8 +13,8 @@ function drawChart() {
   data.addRows([
     [{v:'The Minister', f:'Darryl Smith<div style="color:red">The Honorble Minister</div>'},'','The Minister of Sport and Youth Affairs'],
     ['Boxing Board of Control','The Minister',''],
-    ['Sports Company of Trinidad and Tobago','The Minister',''],
     ['Permanent Secretary','The Minister',''],
+    ['Sports Company of Trinidad and Tobago','The Minister',''],
     ['General Administration','Permanent Secretary',''],
     ['Project Management','Permanent Secretary',''],
     ['Human Resource Management','Permanent Secretary',''],
@@ -46,6 +46,9 @@ function drawChart() {
 
   var chart = new google.visualization.OrgChart(document.getElementById('msya'));
   chart.draw(data,
-    { allowHtml:true }
+    {
+      allowHtml:true,
+      allowCollapse:true
+    }
   );
 }
